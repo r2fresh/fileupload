@@ -1,0 +1,104 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src='js/vendor/jquery.min.js'></script>
+<script src='js/vendor/jquery.ui.widget.js'></script>
+<script src='js/vendor/jquery.fileupload.js'></script>
+<script>
+
+	$(document).ready(function(){
+
+		var host = "https://api.baas.io/";
+		// baas user id
+		var baas_id = "ed38f569-2fc2-11e2-a2c1-02003a570010";
+		// app id
+		var app_id = "d3ecdaba-ef60-11e2-bfad-06ebb80000ba";
+		// all url
+		var fileUrl = host + baas_id + '/' + app_id + '/files';
+		// Authorization
+		var author = "Bearer YWMttJcxXSWcEeOCRQb9AAAAwgAAAUFYkhyqrlveQbJBj5_l9VEsagVpzrQS21w";
+
+		function setFileUpload(){
+
+			var files = document.getElementsByClassName('_file_upload');
+			var uploadStart = document.getElementsByClassName('_upload_start');
+
+			files[0].onchange = function(e){
+				console.log(e)
+			}
+
+			uploadStart[0].onclick = function(e){
+				console.log('dddd')
+			}
+
+			// $('._file_upload').fileupload();
+			// $('._file_upload').fileupload('option', {
+			// 	autoUpload: false,	
+			// 	type: 'POST',
+			// 	url:fileUrl,
+			// 	minFileSize: 10,
+
+			// 	done: function (e, data) {
+			// 		alert('upload complete');
+			// 	},
+			// 	fail: function(e, data) {
+			// 	},
+			// 	add:function(e,data){
+
+			// 		(function($){
+			// 	        $.ajaxSetup({
+			// 	        	beforeSend: function(jqXHR){
+			// 	            	jqXHR.setRequestHeader("Authorization", author);
+			// 	        	},
+			// 	        	error:function(jqXHR,textStatus, errorThrown){
+			// 	        	}
+			// 	    	});
+			// 	    })(jQuery);
+
+			// 		fileData = data;
+			// 	},
+			// 	change: function(e, data) {
+			// 		//요청 content-type이 application/json 으로 설정되는 문제
+			// 	    (function($){
+			// 	        $.ajaxSetup({
+			// 	        	beforeSend: function(jqXHR){
+			// 	            	jqXHR.setRequestHeader("Authorization", author);
+			// 	        	},
+			// 	        	error:function(jqXHR,textStatus, errorThrown){
+			// 	        	}
+			// 	    	});
+			// 	    })(jQuery);
+			// 	}
+			// }).bind('fileuploadsubmit', function(e, data) {
+			// 	var url = fileUrl;
+			// 	var type = 'POST' ;
+
+			// 	$('._file_upload').fileupload('option', 'url', url);
+			// 	$('._file_upload').fileupload('option', 'type', type);
+			// })
+		}
+
+
+		// $('._upload_start').bind('click',function(e){
+		// 	fileData.submit()
+		// 	e.preventDefault();
+		// })
+
+		setFileUpload();
+	})
+
+	
+
+</script>
+</head>
+<body>
+	 <div>
+        <div>
+            <input type="file" name="file" class="_file_upload"/>
+        </div>
+        <div>
+            <button class="_upload_start">upload start</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+	"name":"baasio-login",
+	"main":"index.html",
+	"window": {
+    "toolbar": true,
+    "frame": true,
+    "width": 800,
+    "height": 500,
+    "position": "mouse"
+  }
+}

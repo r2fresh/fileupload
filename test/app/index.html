@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sample application that was created by using JavaScript">
+    <meta name="author" content="support@baas.io">
+
+    <link href="css/vendor/bootstrap.css" rel="stylesheet">
+    <link href="css/vendor/bootstrap-responsive.css" rel="stylesheet">
+    <style>
+    body {
+      padding-top: 40px;
+    }
+    </style>
+  </head>
+  <body>
+    <div class='container'>
+      <!-- <form class='upload_form' onsubmit="return false;"> -->
+        <input type="file" name="file" class="_file_upload" multiple/>
+        <button class="_upload_start">upload start</button>
+      <!-- </form> -->
+     <!--  <input type="file" name="file" class="_file_upload"/>
+      <button class="_upload_start">upload start</button> -->
+    </div>
+
+    
+    <div class='container'>
+      
+      <form class="form-horizontal">
+        
+        <div class="control-group">
+          <label class="control-label" for="inputEmail">Email</label>
+          <div class="controls">
+            <input type="text" id="inputEmail" placeholder="Email">
+          </div>
+        </div>
+        
+        <div class="control-group">
+          <label class="control-label" for="inputPassword">Password</label>
+          <div class="controls">
+            <input type="password" id="inputPassword" placeholder="Password">
+          </div>
+        </div>
+        <div class="control-group">
+          <div class="controls">
+            <label class="checkbox">
+              <input type="checkbox"> Remember me
+            </label>
+            
+            <input type="submit" class="btn" value="Sign in" />
+          </div>
+        </div>
+      </form>
+      <button class='buildAssetURL'>buildAssetUrl</button>
+      <button class='createGroup'>createGroup</button>
+      <button class='createEntity'>Create Entity</button>
+      <button class='getEntity'>getEntity</button>
+      <button class='createCollection'>createCollection</button>
+      <button class='getFeedForUser'>getFeedForUser</button>
+      <button class='createUserActivity'>createUserActivity</button> 
+      <button class='calcTimeDiff'>calcTimeDiff</button>
+      <button class='getLoggedInUser'>getLoggedInUser</button>
+      <button class='buildCurlCall'>buildCurlCall</button>
+    </div>
+    <!-- <p>
+    <div class='entity'>
+      <button class='serialize'>serialize</button>
+      <button class='get'>get</button>
+      <button class='save'>save</button>
+      <button class='fetch'>fetch</button>
+      <button class='destroy'>destroy</button>
+      <button class='connect'>connect</button>
+      <button class='disconnect'>disconnect</button>
+      <button class='getEntityId'>getEntityId</button>
+      <button class='getConnections'>getConnections</button>
+    <div>
+    <p>
+    <div class='collection'>
+      <button class='basic'>basic</button>
+      <button class='serialize'>serialize</button>
+      <button class='fetch'>fetch</button>
+      <button class='addEntity'>addEntity</button>
+      <button class='destroyEntity'>destroyEntity</button>
+      <button class='getEntityByUUID'>getEntityByUUID</button>
+      <button class='getFirstEntity'>getFirstEntity</button>
+      <button class='getLastEntity'>getLastEntity</button>
+      <button class='hasNextEntity'>hasNextEntity</button>
+      <button class='getNextEntity'>getNextEntity</button>
+      <button class='hasPrevEntity'>hasPrevEntity</button>
+      <button class='getPrevEntity'>getPrevEntity</button>
+      <button class='resetEntityPointer'>resetEntityPointer</button>
+      <button class='saveCursor'>saveCursor</button>
+      <button class='resetPaging'>resetPaging</button>
+      <button class='hasNextPage'>hasNextPage</button>
+      <button class='getNextPage'>getNextPage</button>
+      <button class='hasPreviousPage'>hasPreviousPage</button>
+      <button class='getPreviousPage'>getPreviousPage</button>
+    </div>
+    <p>
+    <div class='group'>
+      <button class='basic'>basic</button>
+      <button class='fetch'>fetch</button>
+      <button class='members'>members</button>
+      <button class='add'>add</button>
+      <button class='remove'>remove</button>
+      <button class='feed'>feed</button>
+      <button class='createGroupActivity'>createGroupActivity</button>
+    </div>
+    <p>
+    <div class='push'>
+      <button class='send'>send</button>
+    </div>
+    <p>
+    <div class='etc'>
+      <button class='isUUID'>isUUID</button>
+      <button class='encodeParams'>encodeParams</button>
+    </div> -->
+    
+    
+
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="../../build/Release/0.5.0/baas.io.js"></script>
+    <script src="../../usergrid/0.10.06/usergrid.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
